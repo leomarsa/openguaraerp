@@ -9,12 +9,12 @@ A Simple Admin Pannel written in core PHP. It contains an implementation of gene
   - Pagination
   - Filters
 
-### Live Demo :
-http://corephpadmin.000webhostapp.com/
+### Demo do sistema :
+http://177.125.28.10:8090/openguaraerp
 Credentials :  
-**username** : chetan
-**password** : chetan
+**username** : demo
+**password** : demo
 
 
-### Libraries used : 
+### Biblioteca usada : 
   - MysqliDb (https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
