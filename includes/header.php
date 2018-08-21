@@ -81,7 +81,7 @@
                                 </li>
 
                                 <li <?php echo (CURRENT_PAGE =="customers.php" || CURRENT_PAGE=="add_customer.php") ? 'class="active"' : '' ; ?>>
-                                    <a href="#"><i class="fa fas fa-address-card"></i> Cadastro Pessoa<span class="fa arrow"></span></a>
+                                    <a href="#"><i class="fa fas fa-address-card"></i> Pessoas<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
                                             <a href="customers.php"><i class="fa fa-list fa-fw"></i>Listar Cadastro</a>
@@ -91,19 +91,84 @@
                                     </li>
                                     </ul>
                                 </li>
-                                <li <?php echo (CURRENT_PAGE =="customers.php" || CURRENT_PAGE=="add_customer.php") ? 'class="active"' : '' ; ?>>
-                                    <a href="#"><i class="fa fas fa-cubes"></i> Cadastro Produto<span class="fa arrow"></span></a>
+                               
+                                <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa fas fa-cart-arrow-down"></i> Vendas<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
-                                            <a href="customers.php"><i class="fa fa-list fa-fw"></i>Listar Cadastro</a>
+                                            <a href="#"><i class="fa fa-list fa-fw"></i>Listar Vendas</a>
                                         </li>
                                     <li>
-                                        <a href="add_customer.php"><i class="fa fa-plus fa-fw"></i>Novo Cadastro</a>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Novo Vendas</a>
+                                    </li>
+                                    </ul>
+                                </li>
+
+                                <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa fas fa-cubes"></i> Produtos<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#"><i class="fa fa-list fa-fw"></i>Listar Cadastro</a>
+                                        </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Novo Cadastro</a>
+                                    </li>
+                                    </ul>
+                                </li>
+                                <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#.php") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa fas fa-briefcase"></i> Seviços<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#"><i class="fa fa-list fa-fw"></i>Listar Cadastro</a>
+                                        </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Novo Cadastro</a>
+                                    </li>
+                                    </ul>
+                                </li>
+
+                                  <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa fas fa-calculator"></i> Financeiro<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                        <li>
+                                            <a href="#"><i class="fa fa-plus fa-fw"></i>Contas a Pagar</a>
+                                        </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Contas a Receber</a>
                                     </li>
                                     </ul>
                                 </li>
                                 <li>
+
+                                   <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa far fa-window-maximize"></i> Agenda<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                    <li>
+                                            <a href="#"><i class="fa fa-list fa-fw"></i>Calendario de Eventos</a>
+                                        </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Novo Evento</a>
+                                    </li>
+                                    </ul>
+                                </li>
+
+                                 <li <?php echo (CURRENT_PAGE =="#" || CURRENT_PAGE=="#") ? 'class="active"' : '' ; ?>>
+                                    <a href="#"><i class="fa fas fa-phone"></i> CRM<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#"><i class="fa fa-plus fa-fw"></i>Ordem de Serviços</a>
+                                </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus fa-fw"></i>Orçamentos</a>
+                                    </li>
+                                    </ul>
+                                </li>
+
+                                <li>
                                     <a href="admin_users.php"><i class="fa fa-users"></i> Usuários</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fas fa-server"></i> Configurações</a>
                                 </li>
                             </ul>
                         </div>

@@ -5,12 +5,24 @@ O Programa Open GuaraERP é um sistema de gestão comercial que vai facilitar a 
 # Software Open Source
 Os termos software de código livre e aberto, ou free and open source software em inglês, e software de código livre/libre/aberto, ou free/libre/open source software em inglês, referem-se a um software que é duplamente livre e de código aberto. Wikipédia
 
+
+
+
 ### Demo do sistema :
 http://177.125.28.10:8090/openguaraerp
-Credentials :  
+
+### Credenciais :
+  
 **username** : demo
 **password** : demo
 
 
+### Requerimentos
+    PHP >= 5.4.0
+    MySQL
+
 ### Biblioteca usada : 
   - MysqliDb (https://github.com/ThingEngineer/PHP-MySQLi-Database-Class)
+
+### Contribuidores
+    Leomar Soares - Criador

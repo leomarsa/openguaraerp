@@ -67,12 +67,12 @@ include_once 'includes/header.php';
     <div class="row">
 
         <div class="col-lg-6">
-            <h1 class="page-header">Customers</h1>
+            <h3 class="page-header">Lista de Pessoas</h3>
         </div>
         <div class="col-lg-6" style="">
             <div class="page-action-links text-right">
 	            <a href="add_customer.php?operation=create">
-	            	<button class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Add new </button>
+	            	<button class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Adicionar </button>
 	            </a>
             </div>
         </div>
@@ -81,9 +81,9 @@ include_once 'includes/header.php';
     <!--    Begin filter section-->
     <div class="well text-center filter-form">
         <form class="form form-inline" action="">
-            <label for="input_search">Search</label>
+            <label for="input_search">Pesquisar</label>
             <input type="text" class="form-control" id="input_search" name="search_string" value="<?php echo $search_string; ?>">
-            <label for ="input_order">Order By</label>
+            <label for ="input_order">Ordenar por</label>
             <select name="filter_col" class="form-control">
 
                 <?php
@@ -108,7 +108,7 @@ include_once 'includes/header.php';
                 }
                 ?>>Desc</option>
             </select>
-            <input type="submit" value="Go" class="btn btn-primary">
+            <input type="submit" value="OK" class="btn btn-primary">
 
         </form>
     </div>
@@ -121,10 +121,10 @@ include_once 'includes/header.php';
         <thead>
             <tr>
                 <th class="header">#</th>
-                <th>Name</th>
-                <th>Gender</th>
-                <th>phone</th>
-                <th>Actions</th>
+                <th>Nome</th>
+                <th>Genero</th>
+                <th>Telefone</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
