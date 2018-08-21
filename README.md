@@ -13,8 +13,9 @@ http://177.125.28.10:8090/openguaraerp
 
 ### Credenciais :
   
-**username** : demo
-**password** : demo
+**username** : admin
+
+**password** : admin
 
 
 ### Requerimentos
