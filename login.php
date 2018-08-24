@@ -68,6 +68,6 @@ include_once 'includes/header.php';
 			</div>
 		</div>
 	</form>
-	<center><small>©2018 Leomar Soares. Todos os direitos reservados </small></center>
+	<center><small>Open Guara ERP - Livre para o seu Projeto </small></center>
 </div>
 <?php include_once 'includes/footer.php'; ?>

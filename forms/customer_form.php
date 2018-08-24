@@ -12,10 +12,10 @@
     <div class="form-group">
         <label>Genero * </label>
         <label class="radio-inline">
-            <input type="radio" name="gender" value="male" <?php echo ($edit &&$customer['gender'] =='male') ? "checked": "" ; ?> required="required"/> Masculino
+            <input type="radio" name="gender" value="Masculino" <?php echo ($edit &&$customer['gender'] =='Masculino') ? "checked": "" ; ?> required="required"/> Masculino
         </label>
         <label class="radio-inline">
-            <input type="radio" name="gender" value="female" <?php echo ($edit && $customer['gender'] =='female')? "checked": "" ; ?> required="required" id="female"/> Feminino
+            <input type="radio" name="gender" value="Feminino" <?php echo ($edit && $customer['gender'] =='Feminino')? "checked": "" ; ?> required="required" id="Feminino"/> Feminino
         </label>
     </div>
 
@@ -26,7 +26,7 @@
     
     <div class="form-group">
         <label>Estado </label>
-           <?php $opt_arr = array("Maharashtra", "Kerala", "Madhya pradesh"); 
+           <?php $opt_arr = array("Acre", "Alagoas","Amapá","Amazonas","Bahia","Ceará","Distrito Federal","Espírito Santo","Goiás","Maranhão","Mato Grosso"," Mato Grosso do Sul","Minas Gerais","Pará","Paraíba","Paraná","Pernambuco","Piauí","Rio de Janeiro","Rio Grande do Norte"," Rio Grande do Sul","Rondônia","Roraima","Santa Catarina","São Paulo","Sergipe","Tocantins"); 
                             ?>
             <select name="state" class="form-control selectpicker" required>
                 <option value=" " >Seleciono o seu Estado</option>

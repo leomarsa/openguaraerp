@@ -101,12 +101,12 @@ include_once 'includes/header.php';
                 if ($order_by == 'Asc') {
                     echo "selected";
                 }
-                ?> >Asc</option>
+                ?> >A-Z</option>
                 <option value="Desc" <?php
                 if ($order_by == 'Desc') {
                     echo "selected";
                 }
-                ?>>Desc</option>
+                ?>>Z-A</option>
             </select>
             <input type="submit" value="OK" class="btn btn-primary">
 
@@ -148,17 +148,17 @@ include_once 'includes/header.php';
 						      <div class="modal-content">
 						        <div class="modal-header">
 						          <button type="button" class="close" data-dismiss="modal">&times;</button>
-						          <h4 class="modal-title">Confirm</h4>
+						          <h4 class="modal-title">Confirmação</h4>
 						        </div>
 						        <div class="modal-body">
 						      
 						        		<input type="hidden" name="del_id" id = "del_id" value="<?php echo $row['id'] ?>">
 						        	
-						          <p>Are you sure you want to delete this customer?</p>
+						          <p>Tem certeza de que deseja excluir este cliente?</p>
 						        </div>
 						        <div class="modal-footer">
-						        	<button type="submit" class="btn btn-default pull-left">Yes</button>
-						         	<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+						        	<button type="submit" class="btn btn-default pull-left">Sim</button>
+						         	<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
 						        </div>
 						      </div>
 					      </form>

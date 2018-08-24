@@ -64,11 +64,11 @@ include_once 'includes/header.php';
 <div id="page-wrapper">
 <div class="row">
      <div class="col-lg-6">
-            <h1 class="page-header">Admin users</h1>
+            <h3 class="page-header">Lista de Usuários</h3>
         </div>
         <div class="col-lg-6" style="">
             <div class="page-action-links text-right">
-            <a href="add_admin.php"> <button class="btn btn-success">Add new</button></a>
+            <a href="add_admin.php"> <button class="btn btn-success">Adicionar</button></a>
             </div>
         </div>
 </div>
@@ -83,9 +83,9 @@ include_once 'includes/header.php';
     <!--    Begin filter section-->
     <div class="well text-center filter-form">
         <form class="form form-inline" action="">
-            <label for="input_search" >Search</label>
+            <label for="input_search" >Pesquisar</label>
             <input type="text" class="form-control" id="input_search"  name="search_string" value="<?php echo $search_string; ?>">
-            <label for ="input_order">Order By</label>
+            <label for ="input_order">Ordenar por</label>
             <select name="filter_col" class="form-control">
 
                 <?php
@@ -103,14 +103,14 @@ include_once 'includes/header.php';
                 if ($order_by == 'Asc') {
                     echo "selected";
                 }
-                ?> >Asc</option>
+                ?> >A-Z</option>
                 <option value="Desc" <?php
                 if ($order_by == 'Desc') {
                     echo "selected";
                 }
-                ?>>Desc</option>
+                ?>>Z-A</option>
             </select>
-            <input type="submit" value="Go" class="btn btn-primary">
+            <input type="submit" value="OK" class="btn btn-primary">
 
         </form>
     </div>
@@ -120,9 +120,9 @@ include_once 'includes/header.php';
         <thead>
             <tr>
                 <th class="header">#</th>
-                <th>Name</th>
-                <th>Admin type</th>
-                <th>Actions</th>
+                <th>Login</th>
+                <th>Conta</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
@@ -149,15 +149,15 @@ include_once 'includes/header.php';
                               <div class="modal-content">
                                 <div class="modal-header">
                                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h4 class="modal-title">Confirm</h4>
+                                  <h4 class="modal-title">Confirma</h4>
                                 </div>
                                 <div class="modal-body">
                                     <input type="hidden" name="del_id" id = "del_id" value="<?php echo $row['id'] ?>">
-                                    <p>Are you sure you want to delete this user?</p>
+                                    <p>Tem certeza de que deseja excluir este usuário?</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-default pull-left">Yes</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                                    <button type="submit" class="btn btn-default pull-left">Sim</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
                                 </div>
                               </div>
                           </form>

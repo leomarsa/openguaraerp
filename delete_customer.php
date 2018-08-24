@@ -7,7 +7,7 @@ if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST')
 {
 
 	if($_SESSION['admin_type']!='super'){
-		$_SESSION['failure'] = "You don't have permission to perform this action";
+		$_SESSION['failure'] = "Você não tem permissão para executar esta ação";
     	header('location: customers.php');
         exit;
 
@@ -20,13 +20,13 @@ if ($del_id && $_SERVER['REQUEST_METHOD'] == 'POST')
     
     if ($status) 
     {
-        $_SESSION['info'] = "Customer deleted successfully!";
+        $_SESSION['info'] = "Cliente excluído com sucesso!";
         header('location: customers.php');
         exit;
     }
     else
     {
-    	$_SESSION['failure'] = "Unable to delete customer";
+    	$_SESSION['failure'] = "Não é possível excluir o cliente";
     	header('location: customers.php');
         exit;
 
